@@ -1,5 +1,9 @@
 import Mock from 'mockjs'
 import tableAPI from './user'
+import loginAPI from './login'
+
+//登录相关的
+Mock.mock(/\/users\/login/, 'get', loginAPI.login)
 
 // 用户相关
 Mock.mock(/\/user\/listpage/, 'get', tableAPI.getUserList)

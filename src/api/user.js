@@ -1,5 +1,6 @@
 import request from '@/utils/request'
 
+//查询
 export function getUserListPage(params) {
   return request({
     url: '/user/listpage',
@@ -7,7 +8,7 @@ export function getUserListPage(params) {
     params: params
   })
 }
-
+//删除
 export function removeUser(params) {
   return request({
     url: '/user/remove',
@@ -15,7 +16,7 @@ export function removeUser(params) {
     params: params
   })
 }
-
+//批量删除
 export function batchRemoveUser(params) {
   return request({
     url: '/user/batchremove',
@@ -23,7 +24,7 @@ export function batchRemoveUser(params) {
     params: params
   })
 }
-
+//编辑
 export function editUser(params) {
   return request({
     url: '/user/edit',
@@ -31,7 +32,7 @@ export function editUser(params) {
     params: params
   })
 }
-
+//添加
 export function addUser(params) {
   return request({
     url: '/user/add',

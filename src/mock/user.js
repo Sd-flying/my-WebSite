@@ -2,7 +2,7 @@ import Mock from 'mockjs'
 import {param2Obj} from '@/utils'
 
 let List = []
-const count = 60
+const count = 1000
 
 for (let i = 0; i < count; i++) {
   List.push(Mock.mock({
@@ -18,7 +18,7 @@ for (let i = 0; i < count; i++) {
 export default {
   //获取用户列表
   getUserList: config => {
-    const {name, page = 1, limit = 15} = param2Obj(config.url)
+    const {name, page = 1, limit = 10} = param2Obj(config.url)
 
     const mockList = List.filter(user => {
       if (name && user.name.indexOf(name) === -1) return false

@@ -7,12 +7,13 @@ import Page1 from '@/components/page1'
 import Page2 from '@/components/page2'
 import Page5 from '@/components/page5'
 import Page7 from '@/components/page7'
-import Login from '@/components/login'
+import Login from '@/components/login2'
 import Error from '@/components/errorPage'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'hash',
   routes: [
     {
       path: '/',

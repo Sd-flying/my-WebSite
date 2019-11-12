@@ -17,7 +17,7 @@
         <div class="forget">
           <span>忘记密码？</span>
         </div>
-        <el-button type="info" class="login_button">登录</el-button>
+        <el-button type="info" class="login_button" @click="loginBtns">登录</el-button>
       </div>
       <div v-if="loginway==='register'">
         <div class="input_div">
@@ -53,6 +53,9 @@
     methods: {
       changeLoginway(type) {
         this.$store.dispatch('changeLoginway', type)
+      },
+      loginBtns() {
+        console.log('我是登录按钮')
       }
     },
     created() {

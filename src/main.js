@@ -10,6 +10,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 import './mock'
 import echarts from 'echarts'
 
+import iView from 'iview';
+import 'iview/dist/styles/iview.css';    // 使用 CSS
 
 Vue.use(ElementUI)
 Vue.config.productionTip = false
